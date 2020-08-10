@@ -1,0 +1,409 @@
+/*
+body {
+    background-image: url(images/fondo-blanco.jpg);
+    background-repeat: repeat;
+}
+*/
+body{
+    background-color: rgba(238, 229, 220);
+}
+
+.container {
+    max-width: 1400px;
+}
+
+
+/*ESRILOS BARRA DE NAVEGACION*/
+.barradenavegacion {
+    margin-top: 1em;
+    border-radius: 15px;
+    opacity: .9;
+    background-color: #687373;
+
+}
+
+.sticky-top {
+    top: 5px;
+}
+
+@media screen and (max-width: 400px) {
+    .logo {
+        width: 30px;
+    }
+
+    .letras {
+        font-size: 14px;
+    }
+
+    .iconofooter {
+        width: 40px;
+    }
+}
+
+.letras {
+    display: inline-block;
+
+}
+
+/*FIN ESTILOS BARRA DE NAVEGACION*/
+
+
+/*INICIO CSS VIDEO ENCABEZADO*/
+
+.header {
+    position: relative;
+    background-color: black;
+    height: 500px;
+    margin-bottom: 2em;
+    /*
+  height: 75vh;
+  min-height: 25rem;
+*/
+    width: 100%;
+    overflow: hidden;
+}
+
+.header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/*ESTA MEDIA QUERY HACE QUE CUANDO LA PANTALLA ES PEQUEÑA, EN VEZ DE REPRODUCIR EL VIDEO, PONE UNA IMAGEN DE FONDO*/
+
+/*
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+*/
+
+
+/*FIN CSS VIDEO ENCABEZADO*/
+
+/*CARD DE FORMACION*/
+.h1avatar {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.lista {
+    margin-bottom: 4rem;
+    padding: 1em 0 1em 3em;
+    background-color: #91BCD9;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+
+.lista li {
+    padding: .5em;
+    list-style: square;
+    color: black;
+}
+
+.avatar {
+    margin-bottom: 3rem;
+}
+
+.avatar img {
+    width: 60%;
+    display: block;
+    margin: 0 auto 1em auto;
+}
+
+
+@media screen and (min-width: 992px) {
+    .avatar img {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/*FIN CARD FORMACION*/
+
+
+
+/*INICIO 3 CARDS CON BACKGROUND DE FONDO DEBAJO DEL VIDEO-ENCABEZADO*/
+/*
+.clases-card{
+    margin: 0 1em;
+}
+*/
+.nuestrasclases {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+.imagen1 {
+    background: url(images/scissors.jpg);
+    background-position: 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+}
+
+.imagen2 {
+    background: url(images/rolling-like-a-ball.jpg);
+    background-position: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+}
+
+.imagen3 {
+    background: url(images/mermaid.jpg);
+    background-position: 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+
+}
+
+.ancho {
+    width: 90%;
+}
+
+.clases-card {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.clases-card .card-text {
+    color: black;
+    background-color: #CDE9E9;
+    opacity: .9;
+    border-radius: 15px;
+    padding: .5em;
+    
+
+}
+
+.clases-card .card-title {
+    color: black;
+    background-color: #91BCD9;
+    opacity: .9;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+.clases-card .card {
+    width: 100%;
+    min-height: 400px;
+    overflow: hidden;
+    float: none;
+
+}
+
+#clases-card {
+    text-align: center;
+    margin: 1em 0 1em 0;
+
+}
+
+
+
+/* FIN 3 CARDS CON BACKGROUND DE FONDO DEBAJO DEL VIDEO-ENCABEZADO*/
+
+
+
+
+/*ESTILO 4 CARDS CON 1 IMAGEN ENTRE ELLA */
+.h1yh5 {
+    margin-bottom: 2em;
+}
+
+.conjunto-cards .card {
+    height: 150px;
+    margin: 1em auto 2em auto;
+
+}
+
+.conjunto-cards {
+    display: flex;
+
+}
+
+.cardtitle {
+    text-align: center;
+}
+.tamaño-card{
+    background-color: #91BCD9;
+    border-radius: 15px;
+}
+.card-body {
+    text-align: center;
+}
+.card-body-4{
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.collage {
+    margin-bottom: 1em;
+}
+
+
+
+
+/* FIN ESTILO 4 CARDS CON 1 IMAGEN ENTRE ELLA */
+
+
+
+
+
+/*INICIO GALERIA DE FOTOS*/
+
+.modal-content {
+    background-color: #91BCD9;
+    background-size: cover;
+    border-radius: 30px;
+    opacity: 1;
+    background-repeat: no-repeat;
+    padding: 2em 2em 0 2em;
+    text-align: center;
+}
+
+
+.modal-body {
+    border-radius: 15px;
+}
+
+.modal-footer{
+    border: none;
+}
+
+
+
+
+/*prueba galeria de fotos*/
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+/*FIN GALERIA DE FOTOS*/
+
+
+
+/*INICIO FOOTER*/
+
+
+footer {
+    background-color: #ADAAAA;
+}
+
+
+/*FIN FOOTER*/
